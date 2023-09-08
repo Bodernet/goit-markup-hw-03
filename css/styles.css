@@ -39,12 +39,18 @@ a {
   padding: 120px 0;
 }
 /* HEDER */
+.heder {
+  border-bottom: 1px solid #e7e9fc;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .heder-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
-  border-bottom: 1px solid #e7e9fc;
+  
 }
 .logo {
   display: flex;
