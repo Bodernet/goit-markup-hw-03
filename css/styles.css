@@ -296,7 +296,7 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-bottom: 17.5px;
+  margin-bottom: 16px;
 }
 .footer-accent {
   color: #f4f4fd;
