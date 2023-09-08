@@ -23,15 +23,27 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 a {
   text-decoration: none;
 }
 .container {
-  max-width: 1440px;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0;
 }
 /* HEDER */
+.heder-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
 .logo {
+  display: flex;
+  align-items: center;
   font-family: Raleway, sans-serif;
   color: var(--color-blue);
   font-size: 18px;
@@ -42,6 +54,18 @@ a {
 }
 .logo-accent {
   color: var(--color-gren);
+}
+.heder-nav {
+  display: flex;
+  gap: 30px;
+  flex-grow: 1;
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
+  flex-grow: 1;
+  justify-content: center;
 }
 .nav-link {
   color: var(--color-gren);
@@ -57,10 +81,16 @@ a {
   color: var(--color-hover);
 }
 .nav-link:active {
+  padding: 20px 0 4px;
   color: var(--color-hover);
+  border-bottom: 1px solid #e7e9fc;
 }
 .addres-tel-mail {
   font-style: normal;
+}
+.heder-addres {
+  display: flex;
+  gap: 40px;
 }
 .contacts-email-number {
   color: #434455;
@@ -75,11 +105,14 @@ a {
 .contacts-email-number:focus {
   color: var(--color-hover);
 }
+
 /* section title */
 .order-section {
   background-color: var(--color-gren);
-  padding: 188px 0 32px;
-  height: 600px;
+}
+.order-inner {
+  padding: 188px 0 188px;
+  flex-shrink: 0;
 }
 .order-title {
   max-width: 496px;
@@ -104,9 +137,9 @@ a {
   padding: 16px 32px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-left: 604px;
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .order-button:hover {
   background-color: var(--color-hover);
@@ -116,9 +149,7 @@ a {
 }
 
 /* section about company */
-.company-section {
-  height: 344px;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1 px;
@@ -130,11 +161,14 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  flex-shrink: 0;
 }
 .general-company-list {
   display: flex;
-    gap: 24px;
-    
+  gap: 24px;
+  padding: 120px 0;
+  flex-grow: 1;
+  justify-content: center;
 }
 .company-list {
   color: var(--color-gren);
@@ -142,16 +176,16 @@ a {
   font-weight: 500;
   line-height: 120%;
   letter-spacing: 0.02em;
-  
 }
 .company-text {
   font-size: 16px;
   font-weight: 400;
+  width: 264px;
   line-height: 150%;
   letter-spacing: 0.02em;
 }
 /* section our team */
-.team-fon {
+.team-section {
   background-color: #f4f4fd;
 }
 .team-title {
@@ -162,9 +196,18 @@ a {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 120px;
+  flex-shrink: 0;
+}
+.team-linc {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
 }
 .team-name {
   color: var(--color-gren);
@@ -172,12 +215,17 @@ a {
   font-weight: 500;
   line-height: 120%;
   letter-spacing: 0.02em;
+  padding-bottom: 8px;
 }
 .team-text {
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.02em;
+}
+.name-person {
+  padding: 32px 0;
+  text-align: center;
 }
 /* portfolio */
 .portfolio-title {
@@ -188,6 +236,19 @@ a {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+.portfolio-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding-bottom: 120px;
+  flex-shrink: 0;
+}
+.portfolio-linc {
+  width: calc((100% - 48px) / 3);
+  border: 1px solid #e7e9fc;
 }
 .portfolio-name {
   color: var(--color-gren);
@@ -195,21 +256,46 @@ a {
   font-weight: 500;
   line-height: 120%;
   letter-spacing: 0.02em;
+  padding-bottom: 8px;
+  padding-left: 16px;
 }
 .portfolio-text {
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.02em;
+  padding-left: 16px;
 }
+.portfolio-name-text {
+  padding: 32px 0;
+}
+
 /* footer */
 .footer-background {
   background: var(--color-gren);
 }
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 101.5px 0 100px;
+}
 .footer-logo {
+  display: flex;
+  align-items: center;
+  font-family: Raleway, sans-serif;
+  color: var(--color-blue);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-bottom: 17.5px;
+}
+.footer-accent {
   color: #f4f4fd;
 }
 .footer-text {
+  max-width: 264px;
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
