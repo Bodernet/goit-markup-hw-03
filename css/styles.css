@@ -283,14 +283,11 @@ a {
 /* footer */
 .footer-background {
   background: var(--color-gren);
-}
-.footer-inner {
-  display: flex;
-  flex-direction: column;
-  padding: 101.5px 0 100px;
+  padding: 100px 0 100px;
 }
 .footer-logo {
   display: flex;
+  display: inline-block;
   align-items: center;
   font-family: Raleway, sans-serif;
   color: var(--color-blue);
