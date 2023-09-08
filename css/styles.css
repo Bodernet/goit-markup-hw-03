@@ -41,14 +41,12 @@ a {
 /* HEDER */
 .heder {
   border-bottom: 1px solid #e7e9fc;
-  
 }
 .heder-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
-  
 }
 .logo {
   display: flex;
@@ -83,7 +81,7 @@ a {
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.02em;
-  padding: 24px 0
+  padding: 24px 0;
 }
 .nav-link:hover {
   color: var(--color-hover);
@@ -102,7 +100,7 @@ a {
 .heder-addres {
   display: flex;
   gap: 40px;
-  padding: 24px 0
+  padding: 24px 0;
 }
 .contacts-email-number {
   color: #434455;
@@ -121,6 +119,7 @@ a {
 /* section title */
 .order-section {
   background-color: var(--color-gren);
+  padding: 188px 0;
 }
 .order-inner {
   padding: 188px 0 188px;
@@ -152,6 +151,9 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 .order-button:hover {
   background-color: var(--color-hover);
@@ -164,16 +166,16 @@ a {
 
 .visually-hidden {
   position: absolute;
-  width: 1 px;
-  height: 1 px;
-  margin: -1 px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
   border: 0;
   padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
- }
+}
 .general-company-list {
   display: flex;
   gap: 24px;
@@ -230,7 +232,7 @@ a {
   font-weight: 500;
   line-height: 120%;
   letter-spacing: 0.02em;
-  margin-bottom: 8px
+  margin-bottom: 8px;
 }
 .team-text {
   font-size: 16px;
@@ -251,7 +253,7 @@ a {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .portfolio-list {
   display: flex;
@@ -269,7 +271,7 @@ a {
   font-weight: 500;
   line-height: 120%;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   padding-left: 16px;
 }
 .portfolio-text {
@@ -280,7 +282,7 @@ a {
   padding-left: 16px;
 }
 .portfolio-name-text {
-  padding: 32px 0;
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: 0;
 }
