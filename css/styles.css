@@ -173,20 +173,24 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  flex-shrink: 0;
-}
+ }
 .general-company-list {
   display: flex;
   gap: 24px;
   flex-grow: 1;
   justify-content: center;
 }
+.list {
+  width: calc((100% - 72px) / 4);
+}
+
 .company-list {
   color: var(--color-gren);
   font-size: 20px;
   font-weight: 500;
   line-height: 120%;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .company-text {
   font-size: 16px;
@@ -207,7 +211,7 @@ a {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .team-list {
   display: flex;
@@ -218,6 +222,7 @@ a {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-bottom: 1px solid #e7e9fc;
+  border-radius: 0px 0px 4px 4px;
 }
 .team-name {
   color: var(--color-gren);
@@ -225,7 +230,7 @@ a {
   font-weight: 500;
   line-height: 120%;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px
 }
 .team-text {
   font-size: 16px;
